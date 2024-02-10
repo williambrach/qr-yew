@@ -1,9 +1,15 @@
-<!doctype html>
-<html lang="en">
-    <head>
+<!DOCTYPE html><html lang="en"><head>
         <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    </head>
     <title>QR Code Generator</title>
-    <body></body>
-</html>
+<link rel="preload" href="/qr-yew-7a58075aff2a41d1_bg.wasm" as="fetch" type="application/wasm" crossorigin="anonymous" integrity="sha384-Rj3zeba48_MegdwrDVRkTKAJuGHE3CO7O3EtZqhqFra0ohhlj4Cp9HJzO_g_Lb1U">
+<link rel="modulepreload" href="/qr-yew-7a58075aff2a41d1.js" crossorigin="anonymous" integrity="sha384-Lkgk4UJ_1lokK-8kNOHZRkSJcACZmO9I7SxU7ggtHA2GeN7RUML_vimjVCn8UBZZ"></head>
+    
+    <body>
+
+<script type="module">
+import init, * as bindings from '/qr-yew-7a58075aff2a41d1.js';
+init('/qr-yew-7a58075aff2a41d1_bg.wasm');
+window.wasmBindings = bindings;
+
+</script></body></html>
