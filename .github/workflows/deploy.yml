@@ -20,14 +20,13 @@ jobs:
         override: true
         target: wasm32-unknown-unknown  # Specify the target here
 
-    # Alternatively, you can add a separate step to add the target
     - name: Add wasm32 target
       run: rustup target add wasm32-unknown-unknown
     
     - name: Build Yew App
       run: |
         cargo install --locked trunk
-        trunk build
+        trunk build --release --public-url williambrach.github.io/qr-yew/
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
