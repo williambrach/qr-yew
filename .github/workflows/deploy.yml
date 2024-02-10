@@ -18,7 +18,12 @@ jobs:
         profile: minimal
         toolchain: stable
         override: true
+        target: wasm32-unknown-unknown  # Specify the target here
 
+    # Alternatively, you can add a separate step to add the target
+    - name: Add wasm32 target
+      run: rustup target add wasm32-unknown-unknown
+    
     - name: Build Yew App
       run: |
         cargo install --locked trunk
