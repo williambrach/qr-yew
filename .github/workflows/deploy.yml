@@ -21,11 +21,11 @@ jobs:
 
     - name: Build Yew App
       run: |
-        cargo install wasm-pack
-        wasm-pack build --target web --out-name wasm --out-dir ./static
+        cargo install --locked trunk
+        trunk build
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages  # The branch the action should deploy to.
-        folder: static  # The folder the action should deploy.
+        folder: dist  # The folder the action should deploy.
