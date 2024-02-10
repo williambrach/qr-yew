@@ -3,7 +3,7 @@ learning rust 🦀 on QR WASM Aapp
 
 ## live demo
 
-[https://qr-yew.netlify.app/](https://qr-yew.netlify.app/)
+[https://williambrach.github.io/qr-yew/](https://williambrach.github.io/qr-yew/)
 
 
 ## setup
