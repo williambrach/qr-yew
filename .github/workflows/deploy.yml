@@ -33,6 +33,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
-        folder: static
+        folder: dist
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT here
 
