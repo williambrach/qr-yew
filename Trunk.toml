@@ -1,0 +1,7 @@
+[build]
+target = "index.html"
+dist = "dist"
+public_url = "https://williambrach.github.io/qr-yew/"
+
+[clean]
+dist = "dist"
