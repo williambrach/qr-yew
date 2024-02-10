@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main
+        branch: gh-pages
         folder: dist
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT here
 
